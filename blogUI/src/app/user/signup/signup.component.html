@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="/">My Blog</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+
+        <a class="nav-link" (click)="goToSignIn()">Sign-In</a>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="row p-0 m-0">
+
+  <div class="col-sm"></div>
+
+  <div class="col-sm p-5">
+
+    <h2 class="form-signin-heading">Sign Up</h2>
+
+    <br>
+
+    <span>Name: </span>
+
+    <label for="inputFirstName" class="sr-only">Name</label>
+
+    <input type="text" id="inputName" class="form-control" [(ngModel)]="name" placeholder="name" required autofocus>
+
+    <br>
+
+
+    
+
+    <span>Email: </span>
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+
+    <input type="email" id="inputEmail" class="form-control" [(ngModel)]="email" placeholder="Email address" required>
+
+    <br>
+
+    <span>Password: </span>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+
+    <input type="password" id="inputPassword" class="form-control" [(ngModel)]="password" placeholder="Password" required>
+
+    <br>
+
+
+    
+
+    <button class="btn btn-lg btn-primary btn-block" type="button" (click)="signupFunction()">Sign Up</button>
+
+  </div>
+
+  <div class="col-sm"></div>
+
+</div>
+
